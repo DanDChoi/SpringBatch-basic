@@ -2,6 +2,10 @@ spring:
   profiles:
     active: local
 
+    spring.batch.job.names: ${job.Name:NONE}
+    logging.level.org.springframework.batch: DEBUG
+
+
 ---
 #spring:
 #  profiles: local
@@ -20,3 +24,4 @@ spring:
       username: root
       password: 1234
       driver-class-name: com.mysql.cj.jdbc.Driver
+---
