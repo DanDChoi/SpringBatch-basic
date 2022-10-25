@@ -65,4 +65,11 @@ public class JdbcBatchItemWriterJobConfiguration {
                 .beanMapped()
                 .build();
     }
+
+    //위의 예제를 columnMapped로 사용하면 이렇게
+//    new JdbcBatchItemWriterBuilder<Map<String, Object>>() // Map 사용
+//            .columnMapped()
+//                .dataSource(this.dataSource)
+//                .sql("insert into pay2(amount, tx_name, tx_date_time) values (:amount, :txName, :txDateTime)")
+//                .build();
 }
